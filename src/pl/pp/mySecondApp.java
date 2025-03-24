@@ -4,18 +4,26 @@ import java.util.Scanner;
 
 public class mySecondApp {
     public static void main(String[] args) {
+        //this is a line comment
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter your age in years:");
-        int ageYears = scanner.nextInt();
+        /*
+        This is a block comment
+        it can have multiple lines
+        just like here
+        */
 
-        long ageInSeconds = (long) ageYears * 365 * 24 * 60 * 60;
+        System.out.println("Please enter your name:");
+        String forename = scanner.nextLine();
 
-        System.out.println("My age in seconds: " + ageInSeconds);
+        System.out.println("Please enter your surname:");
+        String surname = scanner.nextLine();
 
+        scanner.close();
 
-
+        System.out.println("Welcome " + forename + " " + surname);
     }
 }
+
 
 
